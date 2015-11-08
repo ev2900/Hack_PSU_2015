@@ -2,7 +2,7 @@
 .large-header {
 	position: relative;
 	width: 100%;
-	background-image: url('');
+	background-image: url('https://s3-us-west-2.amazonaws.com/psuhackathon/a.png');
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
