@@ -1,158 +1,103 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-    
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
-        <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+    <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/nittanydatalabs/lightning-bolt.png">
+	
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-        <style>
-            body { margin:0; padding:0; }
-            #map { position:absolute; top:10px; bottom:10px; left:10px; width:80%; }
-        </style>
-    
-    </head>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/component.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/animated-bg.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+ 
+	<title> Action PSU </title>
+	
+</head>
 
 <body>
-
-	<br>
-
 	
+	<nav>
+		<ul class="cd-primary-nav">
+			<li class="cd-label">About Us</li>
 
-	<div class="col-lg-9"> 
+			<li ><a href="#more"><span style="color: #FF913F">Our Story</span></a></li>
+            
+            <li class="cd-label">Who</li>
+            
+			<li><a href="#team"><span style="color: #FF913F">The Dream Team</span></a></li>
 
-		<div style="text-align: center;"> <h2> Penn State University Park Sexual Assaults </h1> </div>
+			<li class="cd-label">What</li>
 
-		<br>
+			<li><a href="#projects"><span style="color: #FF913F">Our Amazing Projects</span></a></li>
 
-		<iframe width='100%' height='830px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/chrissharkey.ciglojx7j021lu1lzvvvvglcw/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiY2hyaXNzaGFya2V5IiwiYSI6ImNpZ2xvanlpMTAxNHl0N20zMWl6eTYzcDIifQ.5zX9UamrC-4Bh7AFI8xLQw'></iframe>
+			<li class="cd-label">Where</li>
 
+			<li><a href="#works"><span style="color: #FF913F">Work With Us</span></a></li>
+
+			<li class="cd-label">Follow Us</li>
+			
+			<li class="cd-social cd-facebook"><a href="http://www.facebook.com/sparkpennstate">Facebook</a></li>
+			<li class="cd-social cd-twitter"><a href="http://www.twitter.com/sparkpennstate">Twitter</a></li>
+		</ul>
+	</nav>
+    
+	<div id="large-header" class="large-header">
+		<canvas id="demo-canvas"></canvas>
+		<h1 class="main-title"> <span style="color:#4682B4">Nittany Data Labs </span> <br><br> <a href="#our_story" style="color:#ffffff"> Map </a> | <a href="application_closed.html"> <span style="color:#4682B4"> Info </span> </a> </h1>
 	</div>
 
-	<div class="col-lg-3"> 
+<!-- Section 1 WHAT WE DO -->
 
-		<row>
-			<div class="col-lg-12"> 
+	<main id="more" class="cd-main-content" style="margin-top: 5rem;">
+        
+        <!--What is Nittany Analytics Labs? -->
+        <div class="col-lg-12" align="center">
 
-				<div style="text-align: center;"> <h3> Tools </h3> </div> <br>
-
-				<row> 
-					<div class="col-lg-7"> 
-						
-						<row> 
-							<div class="col-lg-12"> <h4> Time of Day </h4> 
-
-								<div class="col-lg-6"> 
-
-								</div>
-
-								<div class="col-lg-6">
-
-								</div>								
-
-							</div>
-						</row>
+        	<br>
+			<h4 style="color: #4682B4;">What is the Sexual Assault Action Dash Board</h4>
+			<br>
+			<h2 style="color: #7e7e7e; font-size: 35px" id="our_story"> The Map </h2>
 			
-						<row> 
-							<div style="text-align: center;"> <h4> Year </h4> </div>	
-							
-							<div class="col-lg-3"> 
-								<button class="btn btn-default btn-sm" style="width:50px;"> 2015 </button>
-								<p> </p>
-							</div>
-
-							<div class="col-lg-3"> 
-								<button class="btn btn-default btn-sm" style="width:50px;"> 2012 </button>
-								<p> </p>
-							</div>
-
-							<div class="col-lg-3"> 
-								<button class="btn btn-default btn-sm" style="width:50px;"> 2014 </button>
-								<p> </p>
-							</div>
-
-							<div class="col-lg-3"> 
-								<button class="btn btn-default btn-sm" style="width:50px;"> 2014 </button>
-								<p> </p>
-							</div>
-
-						</row>
-
-					</div>
-					<div class="col-lg-5" align="center"> 
-						<h4> Type </h4>
-
-						<button class="btn btn-default btn-sm" style="width:175px;"> Forcible Sex Offense </button>
-						<p> </p>
-						<button class="btn btn-default btn-sm" style="width:175px;"> Sexual Assault </button>
-						<p> </p>
-						<button class="btn btn-default btn-sm" style="width:175px;"> Rape/Sexual Assault </button>
-						<p> </p>
-						<button class="btn btn-default btn-sm" style="width:175px;"> Attempted Sexual Assault </button>
-						<p> </p>
-						<button class="btn btn-default btn-sm" style="width:175px;"> Indecent Assault </button>
-						<p> </p>
-						<button class="btn btn-default btn-sm" style="width:175px;"> Stalking </button>
-
-					</div>
-				</row>
-
-				<row> 
-					<div class="col-lg-12" align="center"> 
-						<h4> <br> Days of the Week </h4>
-
-						<button class="btn btn-default" style="width:90px;"> Monday </button>
-						<button class="btn btn-default" style="width:90px;"> Tuesday </button>
-						<button class="btn btn-default" style="width:90px;"> Wensday </button>
-						<button class="btn btn-default" style="width:90px;"> Thursday </button>
-						<p> </p>
-						<button class="btn btn-default" style="width:120px;"> Friday </button>
-						<button class="btn btn-default"style="width:120px;"> Saturday </button>
-						<button class="btn btn-default" style="width:120px;"> Sunday </button>
-											
-					</div>
-				</row>
-		
+			<div class="col-lg-9" style="margin-top: 2rem;"> 	
+				<iframe width='100%' height='830px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/chrissharkey.ciglojx7j021lu1lzvvvvglcw/attribution,zoompan,zoomwheel,geocoder.html?access_token=pk.eyJ1IjoiY2hyaXNzaGFya2V5IiwiYSI6ImNpZ2xvanlpMTAxNHl0N20zMWl6eTYzcDIifQ.5zX9UamrC-4Bh7AFI8xLQw'></iframe>
+				
 			</div>
-		</row>
 
-		<row>
-			<div class="col-lg-12"> 
+			<div class="col-lg-3">
 
-				<div class="col-lg-">
+			<br>
 
-					<div style="text-align: center;"> <h3> Campus </h3> </div> 
+			<h2 style="color: #7e7e7e;"> Campus </h2>
 
-					<div class="col-lg-4" align="center"> 
+				<div class="col-lg-4" align="center"> 
 
 						<!-- Column One -->
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Abington </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Abington </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Behrend </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Behrend </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Carlisle </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Carlisle </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Great Valley </button>						
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Great Valley </button>						
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Hazleton </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Hazleton </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Mont Alto </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Mont Alto </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Scranton </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Scranton </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Wilkes-Barre </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Wilkes-Barre </button>
 						<p> </p>
 
 					</div>
@@ -161,21 +106,21 @@
 
 						<!-- Column Two -->						
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Altoona </button> 
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Altoona </button> 
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Berks </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Berks </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Dubois </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Dubois </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Greater Allegheny </button> 
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Greater Allegheny </button> 
 						<p> </p>				
-						<button class="btn btn-default" style="width:135px;"> Hershey </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Hershey </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> New Kensington </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> New Kensington </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Shenango </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Shenango </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> York </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> York </button>
 						<p> </p>
 					</div>
 
@@ -183,29 +128,101 @@
 
 						<!-- Column Three -->
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Beaver </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Beaver </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Brandywine </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Brandywine </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Fayette </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Fayette </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Harrisburg </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Harrisburg </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Lehigh Valley </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Lehigh Valley </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> Schuylkill </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> Schuylkill </button>
 						<p> </p>
-						<button class="btn btn-default" style="width:135px;"> University Park </button>
+						<button class="btn btn-default" style="width:135px; color: #4682B4;"> University Park </button>
 						<p> </p>
 					</div>
 
 				</div>
+				
+			</div>		
 
+		</div>	
+
+        <!-- Out Amazing Project -->
+		<div class="cd-container" style="margin-top: 5rem;" main id="projects">
+			<div class="col-lg-12"> <br><br><br><br><br> <div>
+			<h4 style="color: #4682B4;"> What We Do</h4>
+			<h2 style="color: #7e7e7e; font-size: 35px"> Our Projects</h2>
+            <p> 
+ 			
+            <p> Sexual Assuly is a problem at universities around the United States. Penn State is no exception. You, me a freind, a family member could be the victim of sexual assualt. We all get the texts. We all get the emails but what are we doing about this issue? Change start with each and everyone of us. You and me. Awarness starts with an understanding of the problem. Our project compiles the data on sexual assults to provide an accureate, unbiased and sounds representation of our problem. The university publishes information everytime an assualt happens howeverthe information is in an unfreindly hard to read manner. We have complied the data from every Penn State campus and we have provided an intuative map with the same information as a notice. </p>
+
+		</div>	
+			
+        <!--Not Sure where this is linked to. but I was afraid to delet it in case it braks any thing so I just commented it out-->
+		<!--</div>-->
+     
+<!-- Section 4 (Work With Us) -->
+	
+		<div class="cd-container" main id="works">
+			
+            <!--Love Big Data?-->
+            <h4 style="color: #4682B4;">Contact Us</h4>
+			<h2 style="color: #7e7e7e; font-size: 35px"> Love big data? </h2>
+            <br>
+
+            <!--Big Data Word Cloud-->
+			<!-- <img src= img/big_data_word_map.png width="850"> -->
+
+			<br><br><br><br><br>
+
+			<h2 style="color: #7e7e7e; font-size: 60px"> <span style="color: #4682B4;"> Data </span> + <span style="color: #4682B4;"> Tech  </span>  =  <span style="color: #4682B4;"> Change </span> </h2> 
+			
+			<br><br><br><br><br>
+            
+            <div class="cd-container-contact">
+												
+				<div class="cd-container-contact-clmn-2">
+					
+					<p> map@alertpsu.com </p>
+
+				</div>
 			</div>
-		</row>
+		</div>
+		
+	</main>
 
-	</div>
-        
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5wGdqrTcgLdOPzMbASsbiHkloxc6v2rE"></script>
+
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
+
+
+<!-- Script for smooth scrolling -->
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 </body>
-
 </html>
